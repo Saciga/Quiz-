@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="timer">
+            Time left: <span id="time">300</span> seconds
+        </div>
+        <form id="quiz-form">
+            
+            <div class="questions-page" id="page1">
+                <div class="question">
+                    <p>1. What is the capital of France?</p>
+                    <label><input type="radio" name="q1" value="a"> a) Berlin</label><br>
+                    <label><input type="radio" name="q1" value="b"> b) Madrid</label><br>
+                    <label><input type="radio" name="q1" value="c"> c) Paris</label><br>
+                    <label><input type="radio" name="q1" value="d"> d) Rome</label>
+                </div>
+                <div class="question">
+                    <p>2. What is 2 + 2?</p>
+                    <label><input type="radio" name="q2" value="a"> a) 3</label><br>
+                    <label><input type="radio" name="q2" value="b"> b) 4</label><br>
+                    <label><input type="radio" name="q2" value="c"> c) 5</label><br>
+                    <label><input type="radio" name="q2" value="d"> d) 6</label>
+                </div>
+                <div class="question">
+                    <p>3. What is the largest planet in our solar system?</p>
+                    <label><input type="radio" name="q3" value="a"> a) Earth</label><br>
+                    <label><input type="radio" name="q3" value="b"> b) Mars</label><br>
+                    <label><input type="radio" name="q3" value="c"> c) Jupiter</label><br>
+                    <label><input type="radio" name="q3" value="d"> d) Saturn</label>
+                </div>
+                <div class="question">
+                    <p>4. Select the prime numbers:</p>
+                    <label><input type="checkbox" name="q4" value="2"> 2</label><br>
+                    <label><input type="checkbox" name="q4" value="3"> 3</label><br>
+                    <label><input type="checkbox" name="q4" value="4"> 4</label><br>
+                    <label><input type="checkbox" name="q4" value="5"> 5</label>
+                </div>
+                <div class="question">
+                    <p>5. Which HTML tag is used to define a heading?</p>
+                    <select name="q5">
+                        <option value="p">p</option>
+                        <option value="h1">h1</option>
+                        <option value="div">div</option>
+                        <option value="span">span</option>
+                    </select>
+                </div>
+            </div>
+
+          
+            <div class="questions-page" id="page2" style="display: none;">
+                <div class="question">
+                    <p>6. What is the chemical symbol for water?</p>
+                    <label><input type="radio" name="q6" value="a"> a) CO2</label><br>
+                    <label><input type="radio" name="q6" value="b"> b) H2O</label><br>
+                    <label><input type="radio" name="q6" value="c"> c) O2</label><br>
+                    <label><input type="radio" name="q6" value="d"> d) CH4</label>
+                </div>
+                <div class="question">
+                    <p>7. What is the capital of Japan?</p>
+                    <label><input type="radio" name="q7" value="a"> a) Beijing</label><br>
+                    <label><input type="radio" name="q7" value="b"> b) Tokyo</label><br>
+                    <label><input type="radio" name="q7" value="c"> c) Seoul</label><br>
+                    <label><input type="radio" name="q7" value="d"> d) Bangkok</label>
+                </div>
+                <div class="question">
+                    <p>8. What is the speed of light?</p>
+                    <label><input type="radio" name="q8" value="a"> a) 299,792 km/s</label><br>
+                    <label><input type="radio" name="q8" value="b"> b) 150,000 km/s</label><br>
+                    <label><input type="radio" name="q8" value="c"> c) 100,000 km/s</label><br>
+                    <label><input type="radio" name="q8" value="d"> d) 200,000 km/s</label>
+                </div>
+                <div class="question">
+                    <p>9. Select the even numbers:</p>
+                    <label><input type="checkbox" name="q9" value="1"> 1</label><br>
+                    <label><input type="checkbox" name="q9" value="2"> 2</label><br>
+                    <label><input type="checkbox" name="q9" value="3"> 3</label><br>
+                    <label><input type="checkbox" name="q9" value="4"> 4</label>
+                </div>
+                <div class="question">
+                    <p>10. Which CSS property is used to change the text color?</p>
+                    <select name="q10">
+                        <option value="font-size">font-size</option>
+                        <option value="text-align">text-align</option>
+                        <option value="color">color</option>
+                        <option value="font-weight">font-weight</option>
+                    </select>
+                </div>
+            </div>
+
+         
+            <div class="questions-page" id="page3" style="display: none;">
+                <div class="question">
+                    <p>11. What is the capital of Italy?</p>
+                    <label><input type="radio" name="q11" value="a"> a) Rome</label><br>
+                    <label><input type="radio" name="q11" value="b"> b) Venice</label><br>
+                    <label><input type="radio" name="q11" value="c"> c) Milan</label><br>
+                    <label><input type="radio" name="q11" value="d"> d) Naples</label>
+                </div>
+                <div class="question">
+                    <p>12. What is the square root of 64?</p>
+                    <label><input type="radio" name="q12" value="a"> a) 6</label><br>
+                    <label><input type="radio" name="q12" value="b"> b) 8</label><br>
+                    <label><input type="radio" name="q12" value="c"> c) 10</label><br>
+                    <label><input type="radio" name="q12" value="d"> d) 12</label>
+                </div>
+                <div class="question">
+                    <p>13. What is the chemical symbol for sodium?</p>
+                    <label><input type="radio" name="q13" value="a"> a) Na</label><br>
+                    <label><input type="radio" name="q13" value="b"> b) K</label><br>
+                    <label><input type="radio" name="q13" value="c"> c) S</label><br>
+                    <label><input type="radio" name="q13" value="d"> d) N</label>
+                </div>
+                <div class="question">
+                    <p>14. Select the vowels:</p>
+                    <label><input type="checkbox" name="q14" value="1"> A</label><br>
+                    <label><input type="checkbox" name="q14" value="2"> B</label><br>
+                    <label><input type="checkbox" name="q14" value="3"> E</label><br>
+                    <label><input type="checkbox" name="q14" value="4"> F</label>
+                </div>
+                <div class="question">
+                    <p>15. Which HTML tag is used to define a paragraph?</p>
+                    <select name="q15">
+                        <option value="div">div</option>
+                        <option value="span">span</option>
+                        <option value="p">p</option>
+                        <option value="h1">h1</option>
+                    </select>
+                </div>
+            </div>
+
+         
+            <div class="questions-page" id="page4" style="display: none;">
+                <div class="question">
+                    <p>16. What is the capital of Australia?</p>
+                    <label><input type="radio" name="q16" value="a"> a) Sydney</label><br>
+                    <label><input type="radio" name="q16" value="b"> b) Melbourne</label><br>
+                    <label><input type="radio" name="q16" value="c"> c) Canberra</label><br>
+                    <label><input type="radio" name="q16" value="d"> d) Brisbane</label>
+                </div>
+                <div class="question">
+                    <p>17. What is 5 x 5?</p>
+                    <label><input type="radio" name="q17" value="a"> a) 10</label><br>
+                    <label><input type="radio" name="q17" value="b"> b) 20</label><br>
+                    <label><input type="radio" name="q17" value="c"> c) 25</label><br>
+                    <label><input type="radio" name="q17" value="d"> d) 30</label>
+                </div>
+                <div class="question">
+                    <p>18. What is the chemical symbol for iron?</p>
+                    <label><input type="radio" name="q18" value="a"> a) Fe</label><br>
+                    <label><input type="radio" name="q18" value="b"> b) Ir</label><br>
+                    <label><input type="radio" name="q18" value="c"> c) In</label><br>
+                    <label><input type="radio" name="q18" value="d"> d) I</label>
+                </div>
+                <div class="question">
+                    <p>19. Select the odd numbers:</p>
+                    <label><input type="checkbox" name="q19" value="1"> 1</label><br>
+                    <label><input type="checkbox" name="q19" value="2"> 2</label><br>
+                    <label><input type="checkbox" name="q19" value="3"> 3</label><br>
+                    <label><input type="checkbox" name="q19" value="4"> 4</label>
+                </div>
+                <div class="question">
+                    <p>20. Which CSS property is used to change the font size?</p>
+                    <select name="q20">
+                        <option value="color">color</option>
+                        <option value="font-size">font-size</option>
+                        <option value="text-align">text-align</option>
+                        <option value="font-weight">font-weight</option>
+                    </select>
+                </div>
+            </div>
+
+            <div id="navigation">
+                <button type="button" id="prev-btn" onclick="showPrevPage()">Previous</button>
+                <button type="button" id="next-btn" onclick="showNextPage()">Next</button>
+                <button type="submit" id="submit-btn" style="display: none;">Submit</button>
+            </div>
+        </form>
+        <div id="result" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
